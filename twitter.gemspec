@@ -1,6 +1,4 @@
-lib = File.expand_path("lib", __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "twitter/version"
+require_relative "lib/twitter/version"
 
 Gem::Specification.new do |spec|
   spec.add_dependency "buftok", "~> 1.0"
